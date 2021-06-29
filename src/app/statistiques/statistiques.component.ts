@@ -24,4 +24,13 @@ export class StatistiquesComponent implements OnInit{
         }
     );
   }
+
+  //Fonction supprimer
+  supprimer(): void{
+    this.statistiquesService.supprimerStats().subscribe(
+        (datas) => {
+            console.log(datas);
+        }
+    );
+  }
 }
