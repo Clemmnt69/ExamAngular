@@ -1,7 +1,7 @@
 export class StatistiqueModel
 {
-    id: number;
+    id: string;
     titre: string;
-    valeur: string;
+    value: string;
     appreciation: string;
 }
