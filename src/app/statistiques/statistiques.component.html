@@ -1,2 +1,3 @@
-<p> {{ statistiqueUne.titre }} </p>
-<p> {{ statistiqueDeux.titre }}</p>
+<p *ngFor="let uneStat of lstStatistique">
+    Une stat : {{uneStat.id}}, {{uneStat.titre}}, {{uneStat.valeur}}, {{uneStat.appreciation}}
+</p>

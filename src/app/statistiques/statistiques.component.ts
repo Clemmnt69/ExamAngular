@@ -8,19 +8,11 @@ import { StatistiqueModel } from '../models/statistiques';
 })
 export class StatistiquesComponent implements OnInit {
 
-  statistiqueUne : StatistiqueModel = { 
-    id: 1, 
-    titre: 'Démographie en France', 
-    valeur: '60M', 
-    appreciation: 'SUCCESS' 
-  }
-
-  statistiqueDeux : StatistiqueModel = { 
-    id: 2, 
-    titre: 'Démographie au Portugal', 
-    valeur: '9M', 
-    appreciation: 'SUCCESS' 
-  }
+  lstStatistique: StatistiqueModel[] = [
+    { id: 1, titre: 'Démographie en France', valeur: '60M', appreciation: 'SUCCES' },
+    { id: 2, titre: 'Démographie au Portugal', valeur: '9M', appreciation: 'SUCCES' },
+    { id: 3, titre: 'Démographie au Brésil', valeur: '180M', appreciation: 'SUCCES' },
+  ];
 
   constructor() { }
 
